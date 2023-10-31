@@ -29,8 +29,8 @@ def classify_image(model, image_path, device):
     return predicted.item()
 
 if __name__ == '__main__':
-    model_path = "modules\model_500.pth"
-    image_path = "datasets\\013-pink\\gesture-pink-2021-03-07_23-07-55-1_39459.jpg"
+    model_path = "weight/model_100.pth"
+    image_path = "datasets/013-pink/gesture-pink-2021-03-07_23-07-55-1_39459.jpg"
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = models.resnet50(pretrained=True) 
