@@ -30,7 +30,7 @@ def classify_image(model, image_path, device):
 
 if __name__ == '__main__':
     model_path = "weight/model_100.pth"
-    image_path = "datasets/013-pink/gesture-pink-2021-03-07_23-07-55-1_39459.jpg"
+    image_path = "run/one/gesture-one-2021-03-07_23-07-48-24_61901.jpg"
 
     device = torch.device("cuda:0" if torch.cuda.is_available() else "cpu")
     model = models.resnet50(pretrained=True) 
